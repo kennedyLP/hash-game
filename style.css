@@ -1,0 +1,95 @@
+body{
+    text-align: center;
+    background-color: rgb(150, 174, 175);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.stage{
+    margin-top: 10%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px black;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.o , .x{
+    color: whitesmoke;
+}
+
+.o{
+    position: relative;
+}
+
+.o::after{
+    position: absolute;
+    content: "o";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x{
+    position: relative;
+}
+
+.x::after{
+    position: absolute;
+    content: "x";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.texts{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+}
+button:hover{
+    background-color: whitesmoke;
+}
+
+#copyright{
+    margin-top: 10vh;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-size: 2vh;
+}
