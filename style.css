@@ -17,8 +17,8 @@ body{
 }
 
 .square{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height:90px;
     background-color: royalblue;
     border: 1px solid black;
     display: inline-block;
@@ -92,4 +92,23 @@ button:hover{
     text-decoration: underline;
     color: black;
     font-size: 2vh;
+}
+
+@media (max-width:576px) {
+
+    .square{
+        
+        width:75px;
+        height:75px;
+    }
+    
+}
+
+@media (min-width:576px) {
+
+    .square{
+        width:100px;
+        height:100px;
+    }
+    
 }
